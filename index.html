@@ -9,9 +9,9 @@
     <!-- Boxicons -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <title>Halloween Website</title>
 </head>
 <body>
@@ -25,7 +25,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">About</a>
@@ -48,11 +48,13 @@
             </div>
         </nav>
     </header>
+
     <main class="main">
         <!-- Home -->
         <section class="home container" id="home">
             <div class="swiper home-swiper">
                 <div class="swiper-wrapper">
+                    <!-- Home Slider 1 -->
                     <section class="swiper-slide">
                         <div class="home__content grid">
                             <div class="home__group">
@@ -81,10 +83,8 @@
                             </div>
                         </div>
                     </section>
-                </div>
-            </div>
-        </section>
 
+        <!-- Home Slider 2 -->
         <section class="swiper-slide">
                         <div class="home__content grid">
                             <div class="home__group">
@@ -114,6 +114,7 @@
                         </div>
                     </section>
 
+                    <!-- Home Slider 3 -->
                     <section class="swiper-slide">
                         <div class="home__content grid">
                             <div class="home__group">
@@ -142,6 +143,10 @@
                             </div>
                         </div>
                     </section>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
     </main>
     <footer></footer>
     <!-- Scroll Up -->
@@ -149,7 +154,7 @@
     <!-- Scroll Reveal -->
 
     <!-- Swiper JS -->
-    <script src="/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- Main JS -->
     <script src="/js/app.js"></script>
 </body>
