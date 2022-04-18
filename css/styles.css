@@ -1,21 +1,31 @@
-/* Google Fonts */
+/*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
 
-/* Variables CSS */
+/*=============== VARIABLES CSS ===============*/
 :root {
     --header-height: 3.5rem;
 
-    /* Colors */
+    /*========== Colors ==========*/
     --hue: 14;
     --first-color: hsl(var(--hue), 91%, 54%);
     --first-color-alt: hsl(var(--hue), 91%, 50%);
     --title-color: hsl(var(--hue), 4%, 100%);
     --text-color: hsl(var(--hue), 4%, 85%);
     --text-color-light: hsl(var(--hue), 4%, 55%);
+
+    /*Green gradient*/
     --body-color: linear-gradient(90deg, hsl(104, 28%, 40%) 0%, hsl(58, 28%, 40%) 100%);
     --container-color: linear-gradient(136deg, hsl(104, 28%, 35%) 0%, hsl(58, 28%, 35%) 100%);
 
-    /* Font and Typography */
+    /*Red gradient*/
+    /* --body-color: linear-gradient(90deg, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
+  --container-color: linear-gradient(136deg, hsl(360, 28%, 35%) 0%, hsl(18, 28%, 35%) 100%); */
+
+    /*Black solid*/
+    /* --body-color: hsl(30, 8%, 8%);
+  --container-color: hsl(30, 8%, 10%); */
+
+    /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
     --biggest-font-size: 2rem;
     --h1-font-size: 1.5rem;
@@ -25,26 +35,26 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
 
-    /* Font Weight */
+    /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
     --font-black: 900;
 
-    /* Margins Bottom */
-    --mb-0-25: 0.25rem;
-    --mb-0-5: 0.5rem;
-    --mb-0-75: 0.75rem;
+    /*========== Margenes Bottom ==========*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
     --mb-1: 1rem;
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
 
-    /* Z-index */
+    /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
 }
 
-/* Responsive Typography */
+/* Responsive typography */
 @media screen and (min-width: 992px) {
     :root {
         --biggest-font-size: 4rem;
@@ -57,11 +67,11 @@
     }
 }
 
-/* Base */
+/*=============== BASE ===============*/
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 html {
@@ -79,9 +89,7 @@ body {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 }
@@ -111,7 +119,7 @@ button {
     font-size: var(--normal-font-size);
 }
 
-/* Reusable CSS Classes */
+/*=============== REUSABLE CSS CLASSES ===============*/
 .section {
     padding: 4.5rem 0 2rem;
 }
@@ -122,7 +130,7 @@ button {
     text-align: center;
 }
 
-/* Layout */
+/*=============== LAYOUT ===============*/
 .container {
     max-width: 968px;
     margin-left: var(--mb-1-5);
@@ -135,10 +143,10 @@ button {
 
 .main {
     overflow: hidden;
-    /* For Animation */
+    /*For animation*/
 }
 
-/* Header */
+/*=============== HEADER ===============*/
 .header {
     width: 100%;
     background: var(--body-color);
@@ -148,7 +156,7 @@ button {
     z-index: var(--z-fixed);
 }
 
-/* Nav */
+/*=============== NAV ===============*/
 .nav {
     height: var(--header-height);
     display: flex;
@@ -235,13 +243,13 @@ button {
     background: var(--container-color);
 }
 
-/* Active Link */
+/* Active link */
 .active-link {
     position: relative;
 }
 
 .active-link::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -.75rem;
     left: 45%;
@@ -251,7 +259,7 @@ button {
     border-radius: 50%;
 }
 
-/* Home */
+/*=============== HOME ===============*/
 .home__content {
     row-gap: 1rem;
 }
@@ -278,7 +286,7 @@ button {
 }
 
 .home__indicator::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 1px;
     height: 48px;
@@ -344,7 +352,7 @@ button {
     border-radius: .5rem;
 }
 
-/* Button */
+/*=============== BUTTONS ===============*/
 .button {
     display: inline-block;
     background-color: var(--first-color);
@@ -384,7 +392,7 @@ button {
     column-gap: .5rem;
 }
 
-/* Category */
+/*=============== CATEGORY ===============*/
 .category__container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem 2rem;
@@ -408,7 +416,7 @@ button {
     transform: translateY(-.5rem);
 }
 
-/* About */
+/*=============== ABOUT ===============*/
 .about__container {
     row-gap: 2rem;
 }
@@ -426,7 +434,7 @@ button {
     justify-self: center;
 }
 
-/* Trick Or Treat */
+/*=============== TRICK OR TREAT ===============*/
 .trick__container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -473,20 +481,20 @@ button {
     bottom: 0;
 }
 
-.trick__content:hover .trick__button {
-    right: 0;
-}
-
 .trick__icon {
     font-size: 1.25rem;
-    color: var(--title-color)
+    color: var(--title-color);
 }
 
 .trick__content:hover .trick__img {
     transform: translateY(-.5rem);
 }
 
-/* Discount */
+.trick__content:hover .trick__button {
+    right: 0;
+}
+
+/*=============== DISCOUNT ===============*/
 .discount__container {
     background: var(--container-color);
     border-radius: 1rem;
@@ -508,7 +516,7 @@ button {
     justify-self: center;
 }
 
-/* New Arrivals */
+/*=============== NEW ARRIVALS ===============*/
 .new__container {
     padding-top: 1rem;
 }
@@ -574,8 +582,8 @@ button {
     padding: .5rem;
     border-radius: .25rem .25rem .75rem .25rem;
     position: absolute;
-    right: -3rem;
     bottom: 0;
+    right: -3rem;
 }
 
 .new__icon {
@@ -590,7 +598,7 @@ button {
     right: 0;
 }
 
-/* Newsletter */
+/*=============== NEWSLETTER ===============*/
 .newsletter__description {
     text-align: center;
     margin-bottom: var(--mb-1-5);
@@ -615,7 +623,7 @@ button {
     color: var(--text-color);
 }
 
-/* Footer */
+/*=============== FOOTER ===============*/
 .footer {
     position: relative;
     overflow: hidden;
@@ -710,7 +718,7 @@ button {
     margin-top: 4.5rem;
 }
 
-/* Scroll Up */
+/*=============== SCROLL UP ===============*/
 .scrollup {
     position: fixed;
     background: var(--container-color);
@@ -720,7 +728,8 @@ button {
     padding: .3rem;
     border-radius: .25rem;
     z-index: var(--z-tooltip);
-    opacity: .4s;
+    opacity: .8;
+    transition: .4s;
 }
 
 .scrollup__icon {
@@ -733,25 +742,23 @@ button {
     opacity: 1;
 }
 
-/* Show Scroll Up */
+/* Show Scroll Up*/
 .show-scroll {
     bottom: 3rem;
 }
 
-/* Scroll Bar */
-::-webkit-scrollbar,
-::-moz-scrollbar {
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
     width: 0.6rem;
     background: #413e3e;
 }
 
-::-webkit-scrollbar-thumb,
-::-moz-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #272525;
     border-radius: .5rem;
 }
 
-/* Breakpoints */
+/*===============  BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
     .container {
@@ -776,7 +783,7 @@ button {
     }
 }
 
-/* For Medium Devices */
+/* For medium devices */
 @media screen and (min-width: 576px) {
     .about__container {
         grid-template-columns: .8fr;
@@ -849,7 +856,7 @@ button {
 
     .about__title,
     .about__data {
-        text-align: center;
+        text-align: initial;
     }
 
     .about__img {
@@ -897,7 +904,7 @@ button {
     }
 }
 
-/* For Large Devices */
+/* For large devices */
 @media screen and (min-width: 992px) {
     .container {
         margin-left: auto;
@@ -932,6 +939,11 @@ button {
 
     .home__indicator::after {
         top: 0;
+        height: 75px;
+    }
+
+    .home__details-img {
+        bottom: 0;
         right: 58%;
     }
 
@@ -952,6 +964,10 @@ button {
         width: 200px;
     }
 
+    .about__container {
+        column-gap: 7rem;
+    }
+
     .about__img {
         width: 350px;
     }
@@ -961,6 +977,10 @@ button {
     }
 
     .trick__container {
+        gap: 3.5rem;
+    }
+
+    .trick__content {
         border-radius: 1.5rem;
     }
 
