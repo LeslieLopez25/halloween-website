@@ -870,7 +870,8 @@ button {
         margin-top: var(--mb-2);
     }
 
-    .category__container {
+    .category__container,
+    .accessories__container {
         grid-template-columns: repeat(3, 200px);
         justify-content: center;
     }
