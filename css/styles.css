@@ -598,6 +598,30 @@ button {
     right: 0;
 }
 
+/* Accessories */
+.accessories__container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem 2rem;
+}
+
+.accessories__data {
+    text-align: center;
+}
+
+.accessories__img {
+    width: 100px;
+    margin-bottom: var(--mb-0-75);
+    transition: .3s;
+}
+
+.accessories__title {
+    margin-bottom: var(--mb-0-25);
+}
+
+.accessories__data:hover .accessories__img {
+    transform: translateY(-.5rem);
+}
+
 /* Newsletter */
 .newsletter__description {
     text-align: center;
