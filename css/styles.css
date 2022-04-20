@@ -802,7 +802,8 @@ button {
     }
 
     .category__container,
-    .trick__container {
+    .trick__container,
+    .accessories__container {
         grid-template-columns: .8fr;
         justify-content: center;
     }
