@@ -870,8 +870,7 @@ button {
         margin-top: var(--mb-2);
     }
 
-    .category__container,
-    .accessories__container {
+    .category__container {
         grid-template-columns: repeat(3, 200px);
         justify-content: center;
     }
@@ -983,11 +982,13 @@ button {
         padding-right: 2rem;
     }
 
-    .category__container {
+    .category__container,
+    .about__container {
         column-gap: 8rem;
     }
 
-    .category__img {
+    .category__img,
+    .about__img {
         width: 200px;
     }
 
