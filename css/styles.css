@@ -593,7 +593,7 @@ button {
 /* Accessories */
 .accessories__container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem 2rem;
+    gap: 3rem 2rem;
 }
 
 .accessories__data {
